@@ -21,8 +21,9 @@ options.add_argument('--disable-dev-shm-usage')
 options.add_argument('--no-sandbox')
 driver = webdriver.Chrome(executable_path=PATH,options=options)
 #driver2=webdriver.Chrome(PATH)
-
+#f=open("training_data/personal_ques.txt","a")
 query=input('Hello! I am a moodle bot! what you want me to do?')
+
 if 'login' in query:
     driver.get("https://moodle.iitd.ac.in/login/index.php") 
 
